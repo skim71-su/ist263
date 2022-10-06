@@ -1,0 +1,13 @@
+ /* below we have a grouped selector */
+h1, h2 {
+    color:cornflowerblue;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+.evenrow {
+    background:coral;
+}
