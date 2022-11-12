@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #skip {
+            background-color: #ffa500;
+            border: 1px solid #000000;
+            padding: 2px; 
+            position: absolute; /* out of page flow for layout */
+            left: -999px;
+        }
+        #skip:focus {
+            left: 10px;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <a id="skip" tabindex="1" href="#content">Skip to Content</a><br>
+    <!--# sign in href means bookmark ^^^ link-->
+    <a href="http://www.syr.edu" tabindex="2">SU</a><br>
+    <a href="http://www.amazon.com" tabindex="3">Amazon</a><br>
+    <a href="http://www.google.com" tabindex="4">Google</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ratione doloremque commodi cum accusamus rerum inventore sint facilis aut sapiente ipsam, architecto error mollitia facere dolor sit ut distinctio eligendi?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, impedit voluptas! Nostrum labore laboriosam quibusdam? Sit quasi quisquam esse voluptate unde quos molestiae? Odio nemo nihil quidem nesciunt asperiores distinctio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, architecto repudiandae beatae officia quis asperiores unde! Sunt neque deleniti perferendis, consequuntur unde earum dolorum voluptatem tenetur rerum nihil a non?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, esse dolor, amet molestiae enim dolorum hic, unde at adipisci consequuntur minus fuga sunt quas autem excepturi nobis perspiciatis ullam porro?</p>
+    <p id="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea itaque ad debitis ab consequatur ex, blanditiis cum perferendis officiis, quo eos nihil et vel autem facilis saepe minus quasi.</p>
+    <!--this is part of our bookmark link-->
+</body>
+</html>

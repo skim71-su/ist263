@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .row1{
+                
+                display: flex;
+                background-color: #4c729a;
+                border-radius: 1em;
+                padding: 15px;
+                margin-top: 30px;
+            }
+            .r1Col1{
+                flex: 0.3;
+                
+            }
+            .r1Col2{
+                flex: 1;
+                
+                margin-top: 70px;
+            }
+            .linkImg{
+                width: 20px;
+                height:20px;
+            }
+            .clear{
+                clear: both;
+            }
+            .row2{
+                margin-top: 10px;
+                display: flex;
+                
+                background-color: #4c729a;
+                border-radius: 1em;
+                padding: 15px;
+                flex-wrap: wrap;
+                
+            }
+            .r2Col1{
+                display: flex;
+                justify-content: center;
+                flex:1
+                
+                
+            }
+            .r2Col2{
+                display: flex;
+                justify-content: center;
+                flex:2
+                
+                
+            }
+            .map{
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a  href="index.html">Home </a><span> | </span>
+            <a  href="skills.html">Skills</a><span> | </span>
+            <a  href="contact.html">Contact</a>
+        </nav>
+        <div class="row1">
+            
+            <div class="r1Col1">
+                <h3>Address</h3><br>
+                Sungyun Kim<br> 619 Comstock Ave.<br> Syracuse, NY, 13244 
+            </div>
+            <div class="r1Col2">
+                <a href="mailto:skim71@syr.edu">Sungyun Kim Email</a> <br>
+                <a href="https://www.linkedin.com/in/sungyunkim0918">My LinkedIn Profile</a>
+                <a href="https://www.linkedin.com/in/sungyunkim0918"><img src="../images/logo-sized.png" alt="LinkedIn Logo" class="linkImg"></a>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="r2Col1">
+                <form action ="https://formspree.io/f/xvoyaoyl" method="post">
+                    <label for="fullname">Enter Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <p class="formQ">Do you like my skills?</p>
+                    <input type="radio" id="yes" name="yesorno" value="yes" checked>
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="yesorno" value="no">
+                    <label for="no">No</label><br>
+                    <label for="suggestion">Any Suggestions about My Skills?</label><br>
+                    <textarea id="suggestion" name="specialsuggestion"></textarea><br>
+                    <input type="submit" value="submit form">
+                </form>
+            </div>
+            <div class="clear"></div>
+            <div class="r2Col2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.087246740631!2d-76.13179438452212!3d43.039595779147064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f37533723597%3A0xd7228330def70b96!2s619%20Comstock%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1663250413496!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+            
+        </div>
+
+        <!--<div class="row2">
+            <div class="r2Col1">
+                <form action ="https://formspree.io/f/xvoyaoyl" method="post">
+                    <label for="fullname">Enter Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <p class="formQ">Do you like my skills?</p>
+                    <input type="radio" id="yes" name="yesorno" value="yes" checked>
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="yesorno" value="no">
+                    <label for="no">No</label><br>
+                    <label for="suggestion">Any Suggestions about My Skills?</label><br>
+                    <textarea id="suggestion" name="specialsuggestion"></textarea><br>
+                    <input type="submit" value="submit form">
+                </form>
+            </div>
+            <div class="clear"></div>
+            <div class="r2Col2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.087246740631!2d-76.13179438452212!3d43.039595779147064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f37533723597%3A0xd7228330def70b96!2s619%20Comstock%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1663250413496!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>-->
+    </body>
+</html>
