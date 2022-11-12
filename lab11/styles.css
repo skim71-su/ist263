@@ -3,7 +3,7 @@ body{
     color: #f0f8f0;
 }
 p {
-    color: #E08E79;
+    color: #ffffff;
 }
 
 a:visited{
@@ -22,7 +22,7 @@ nav{
     margin-bottom: 30px;
 }
 nav a{
-    color:#ff00ff;
+    color:#ffffff;
 }
 nav a:visited{
     color:#02173d;
