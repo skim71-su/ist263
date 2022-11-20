@@ -31,4 +31,4 @@ body {
 @media (max-width: 850px) {
     div {flex-direction: column;
          margin:10px;}
-}
+    }
