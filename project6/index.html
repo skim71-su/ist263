@@ -26,10 +26,12 @@
         }
         .wwaTxt {
             flex:1;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            
             text-align: center;
-            vertical-align: center;
+            padding: 150px 0;
+            
             /*need to work on the text moving vertically*/
             
 
@@ -100,18 +102,38 @@
         h4 {
             font-family: 'Abril Fatface', cursive;
         }
+        
     </style>
+    <script>
+        function showNav () {
+            document.getElementById("nav").style.display = "block";
+        }
+        function hideNav() {
+            document.getElementById("nav").style.display = "none";
+        }
+        function showX () {
+            document.getElementById("close").style.display = "block";
+        }
+    </script>
 </head>
 <body>
     <h2>Gamma Chapter</h2>
     <h1>Syracuse Kappa Phi Lambda</h1>
     <h3>Est. 1997</h3>
-    <nav>
+    <div class="row">
+        <div>
+            <img src="../Project/media/arrow.png" id="aricon" onclick="showNav();" onclick="showX();">
+        </div>
+        <div>
+            <p id="close" onclick="hideNav();">X</p>
+        </div>
+    </div>
+    <div id="nav">
         <a href="index.html">Home</a><span> | </span>
         <a href="homePage.html">About Us</a><span> | </span>
         <a href="recruitPage.html">Recruitment</a>
-    </nav>
-    
+    </div>
+    <section>
     <h4>Who we are:</h4>
     <div class="wwa">
         <div class="wwaPic">
@@ -122,6 +144,7 @@
             <p>We are the Gamma Chapter of kappa Phi Lambda Sorority, Incorporated. Our seven founding mothers established the first chapter of Kappa Phi Lambda at Binghamton University on March 9, 1995. </p> 
         </div>
     </div>
+    
     <div class="history">
         <div class="foundings">
             <h4>Founding Mothers (Spring '95):</h4>
@@ -141,6 +164,8 @@
             </p>
         </div>
     </div>
+    </section>
+    <section>
     <div class="info">
         <div class="mgc">
             <div class="mgcH"><h4>About Multicultural Greek Council (MGC):</h4>
@@ -158,9 +183,8 @@
                 <p>Our Sisters represent our sorority all around the world and in a variety of professions, and they have traveled widely. There are countless memories to be made thanks to the strong and friendly network of Sisters we have built.</p>
                 <a href="https://kplsorority.org/">National Website</a>
             </div>
-            
-            
         </div>
-    </div> 
+    </div>
+    </section> 
 </body>
 </html>
