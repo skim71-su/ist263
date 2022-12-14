@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment</title>
+    <link rel="stylesheet" href="projectStyles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        .rimg, .conimg {
+            max-width:100%;
+        }
+        .insimg, .fbimg {
+            width:50px;
+            height:50px;
+        }
+        .qa {
+            display:flex;
+        }
+        .qapic {
+            flex:1;
+        }
+        .qawords{
+            flex:1;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 1em;
+            background-color: #e9d4b4;
+            border-radius: 1em;
+            border-style:dotted;
+            border-width: 3px;
+            border-color: #933760;
+            text-align: left;
+        }
+        .contact {
+            display:flex;
+        }
+        .conInfo {
+            flex:1;
+        }
+        .form{
+            flex:1;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 1em;
+            background-color: #e9d4b4;
+            border-radius: 1em;
+            border-style:dotted;
+            border-width: 3px;
+            border-color: #933760;
+            text-align:center;
+            padding: 150px 0;
+            
+        }
+        h4 {
+            font-family: 'Abril Fatface', cursive;
+        }
+    </style>
+    <script>
+        function showNav () {
+            document.getElementById("nav").style.display = "block";
+        }
+        function hideNav() {
+            document.getElementById("nav").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <h2>Gamma Chapter</h2>
+    <h1>Syracuse Kappa Phi Lambda</h1>
+    <h3>Est. 1997</h3>
+    <div class="row">
+        <div>
+            <img src="../Project/media/arrow.png" id="aricon" onclick="showNav();">
+        </div>
+        <div>
+            <p id="close" onclick="hideNav();">X</p>
+        </div>
+    </div>
+    <div id="nav">
+        <a href="index.html">Home</a><span> | </span>
+        <a href="homePage.html">About Us</a><span> | </span>
+        <a href="recruitPage.html">Recruitment</a>
+    </div>
+    
+    <h4>Recruiment Q&A</h4>
+    <div class="qa">
+        <div class="qapic">
+            
+            <img src="../Project/media/recruit.png" alt="recruit Picture" class="rimg">
+        </div>
+        <div class="qawords">
+            <strong>What is Rush?:</strong>  Rush is a chance for you to get to know all the campus groups so you can be sure to join the one that's perfect for you. Keeping an open mind is among the most crucial things to keep in mind. All interested parties are welcome to attend our rush to get to meet our sisters and learn more about who we are. Rush is specifically created for you to be able to have fun and to offer a laid-back setting for you to ask questions. The best part is that it's completely free!<br>
+            <strong>What is a bid?:</strong> If we believe you would be a suitable match into our sorority, you will get a bid at the conclusion of rush week. This is a request to start the application process to become a sister. You must participate in at least 1 GIM, 2 rush activities, and have a GPA of at least 2.5 to be eligible for a bid. Freshmen in their first semester are not eligible to participate unless they have at least 12 college credits. But we invite everyone who is interested to come out and support us. If you choose to accept a bid, the new member application procedure will begin.<br>
+            <strong>Do I have to be Asian to join?:</strong> Definitely not. Sisters of Kappa Phi Lambda come from many different countries and live both on and off campus. We are looking for people to join our organization who are enthusiastic about community and who want to preserve our three pillars of Sisterhood, Service, and Cultural Diversity.<br>
+            <strong>What is the New Member Process?:</strong> Once you accept your bid, you go through a time of education about your self, our sisters, and our sorority as a Potential New Member. The process is designed to push you, develop you as a leader, and offer you a better understanding of what it means to be a sister. It demands your time and commitment, just as everything worthwhile does. We want to underline that Kappa Phi Lambda rigorously adheres to the principles and practices that support a successful new member process. The Anti-Hazing Policy is taken seriously by us.
+        </div>  
+
+    </div>
+    <h4>Contact Us!</h4>
+    <div class="contact">
+        <div class="conInfo">
+            
+            <img src="../Project/media/Liked_7_1.jpg" alt="contact picture" class="conimg">
+            
+        </div>
+        <div class="form">
+            <form action ="https://formspree.io/f/mgeqrwkz" method="post"></form>
+
+            <label for="firstname">First Name:</label><br>
+            <input type="text" id="firstname" name="firstname"> <br>
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" id="lastname" name="lastname">
+
+            <p class="formQ">Your year: </p>
+                    <input type="radio" id="fresh" name="freshmen" value="freshmen">
+                    <label for="fresh">Freshmen</label><br>
+                    <input type="radio" id="soph" name="sophomore" value="sophomore">
+                    <label for="soph">Sophomore</label><br>
+                    <input type="radio" id="jun" name="junior" value="junior">
+                    <label for="jun">Junior</label><br>
+                    <input type="radio" id="sen" name="senior" value="senior">
+                    <label for="sen">Senior</label><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="message">Your Message: </label><br>
+            <textarea id="message" name="message"></textarea><br>
+
+            <input type="submit" value="submit form">
+            
+            <p>
+                If you have any questions, concerns, or would like to learn more about Kappa Phi Lambda at Syracuse University, please don’t hesitate to contact us (add a form). You can also follow us on social media!<br>
+                <a href="https://www.instagram.com/syracusekpl/"><img src="../Project/media/instagram.png" alt="insta Logo" class="insimg"></a>
+                <a href="https://www.facebook.com/syracusekpl"><img src="../Project/media/facebook.png" alt="fb Logo" class="fbimg"></a>
+            </p>
+                    
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
